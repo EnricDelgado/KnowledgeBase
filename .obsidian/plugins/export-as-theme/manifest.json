@@ -1,0 +1,9 @@
+{
+	"id": "export-as-theme",
+	"name": "Export as Theme",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Export PDFs with your current Obsidian theme's colors and styles",
+	"author": "",
+	"isDesktopOnly": false
+}

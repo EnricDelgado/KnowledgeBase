@@ -1,0 +1,8 @@
+{
+  "cssTheme": "Minimal Dracula",
+  "baseFontSizeAction": true,
+  "translucency": true,
+  "enabledCssSnippets": [
+    "image-snippets"
+  ]
+}

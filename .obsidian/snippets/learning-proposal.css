@@ -1,0 +1,84 @@
+/* === Learning Proposal styling tweaks === */
+
+/* Slightly larger headings for better scanability */
+.markdown-preview-view h1 {
+  font-size: 1.8em;
+  margin-bottom: 0.6em;
+}
+
+.markdown-preview-view h2 {
+  font-size: 1.5em;
+  margin-top: 1.4em;
+  margin-bottom: 0.4em;
+}
+
+.markdown-preview-view h3 {
+  font-size: 1.25em;
+  margin-top: 1.1em;
+  margin-bottom: 0.3em;
+}
+
+/* More breathing room between sections */
+.markdown-preview-view hr {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/* Improve readability of paragraphs */
+.markdown-preview-view p {
+  line-height: 1.6;
+  margin-bottom: 0.3em;
+}
+
+/* Tighten bullet spacing slightly but keep it readable */
+.markdown-preview-view ul,
+.markdown-preview-view ol {
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+}
+
+/* Table styling: border, zebra stripes, and padding */
+.markdown-preview-view table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  width: 100%;
+  font-size: 0.95em;
+}
+
+.markdown-preview-view th,
+.markdown-preview-view td {
+  border: 1px solid var(--background-modifier-border);
+  padding: 0.4em 0.6em;
+  vertical-align: top;
+}
+
+.markdown-preview-view thead th {
+  background-color: var(--background-secondary-alt);
+  font-weight: 600;
+}
+
+/* Zebra striping for easier scanning */
+.markdown-preview-view tbody tr:nth-child(even) {
+  background-color: rgba(127, 127, 127, 0.06);
+}
+
+/* Make links easier to pick out in a sea of resources */
+.markdown-preview-view a {
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.25);
+}
+
+.markdown-preview-view a:hover {
+  text-decoration: underline;
+}
+
+/* Slight card-like feel for the whole note */
+.markdown-preview-view {
+  padding: 1.5em 1.8em;
+}
+
+/* Optional: subtle highlight for major top-level sections */
+.markdown-preview-view h2 {
+  border-left: 3px solid var(--text-accent);
+  padding-left: 0.4em;
+}

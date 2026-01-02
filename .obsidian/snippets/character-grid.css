@@ -1,0 +1,99 @@
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+.character-box {
+  border: 1px solid var(--text-muted);
+  border-radius: 10px;
+  padding: 10px;
+  background-color: var(--background-secondary);
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+.character-box h3 {
+  margin: 0 0 4px;
+  color: var(--text-accent);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+/* === Character Sheet Grid === */
+.character-sheet .character-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  font-family: 'Comic Sans MS', 'Patrick Hand', 'Caveat', cursive;
+}
+
+/* === Individual Boxes === */
+.character-sheet .character-box {
+  background: var(--background-secondary);
+  border: 2px solid var(--text-muted);
+  border-radius: 8px;
+  padding: 10px 14px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  line-height: 1.3em;
+}
+
+.character-sheet .character-box h3 {
+  margin-top: 0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-accent);
+  border-bottom: 1px solid var(--text-faint);
+  padding-bottom: 2px;
+}
+
+.character-sheet .character-box h4 {
+  text-align: center;
+  margin: 4px 0 0;
+  font-weight: 600;
+}
+
+/* === Portrait Box === */
+.character-sheet .portrait {
+  grid-row: span 2;
+  text-align: center;
+}
+
+.character-sheet .portrait img {
+  border: 2px solid var(--text-muted);
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+
+/* === Color Palette Row === */
+.character-sheet .color-row {
+  display: flex;
+  gap: 4px;
+  margin-top: 6px;
+}
+.character-sheet .color-box {
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--text-faint);
+  border-radius: 4px;
+}
+
+/* === Description / Notes Boxes === */
+.character-sheet .description,
+.character-sheet .info {
+  grid-column: span 2;
+}
+
+.character-sheet blockquote {
+  margin: 4px 0;
+  font-style: italic;
+  opacity: 0.8;
+  color: var(--text-muted);
+}
+
+/* === Optional Comic Outline Look === */
+.theme-dark .character-box {
+  background: rgba(255,255,255,0.05);
+}
+.theme-light .character-box {
+  background: rgba(0,0,0,0.02);
+}

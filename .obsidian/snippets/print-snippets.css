@@ -1,0 +1,169 @@
+/* Obsidianite Dark Print Theme — with full-page dark margins */
+
+@media print {
+  /* --- Page and Margin Overrides --- */
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #100e17 !important; /* same as theme background */
+    color: #bebebe !important;
+    font-family: 'Rubik', sans-serif;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  @page {
+    size: A4;
+    margin: 0 !important; /* disables white hardware margins */
+    background-color: #100e17;
+  }
+
+  /* Simulated margins inside the page */
+  body {
+    padding: 2cm; /* adjust this for desired margin size */
+    line-height: 1.6;
+  }
+
+  /* --- Base Theme Variables --- */
+  :root body {
+    --background-primary: #100e17;
+    --background-primary-alt: #0d0b12;
+    --background-secondary: #191621;
+    --background-secondary-alt: #0d0b12;
+    --text-normal: #bebebe;
+    --text-faint: #7aa2f7;
+    --text-accent: #0fb6d6;
+    --text-sub-accent: #f4569d;
+    --text-dim: #45aaff;
+    --text-title-h1: var(--text-accent);
+    --text-title-h2: #cbdbe5;
+    --text-title-h3: #cbdbe5;
+    --text-title-h4: #cbdbe5;
+    --text-title-h5: #cbdbe5;
+    --text-a: #6bcafb;
+    --text-a-hover: #6bcafb;
+    --interactive-accent: rgba(14, 210, 247, 0.5);
+    --interactive-accent-hover: rgba(14, 210, 247, 0.8);
+    --blockquote-border: #4aa8fb;
+    --tag-background: rgba(14, 210, 247, 0.15);
+    --background-modifier-border: rgba(14, 210, 247, 0.05);
+    --table-border-color: rgba(14, 210, 247, 0.15);
+    --text-highlight-bg: rgba(244, 86, 157, 0.25);
+    --font-family-preview: 'Rubik', sans-serif;
+    --code-background: var(--background-secondary);
+    --code-color: rgba(14, 210, 247, 0.9);
+    --code-border-radius: 0.3rem;
+    color-scheme: dark;
+  }
+
+  /* --- Typography --- */
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--text-title-h2);
+    border-bottom: 1px solid var(--background-modifier-border);
+    padding-bottom: 0.3em;
+    margin-top: 2em;
+  }
+
+  h1 { color: var(--text-title-h1); font-size: 2.2em; }
+  h2 { color: var(--text-title-h2); font-size: 1.8em; }
+  h3 { color: var(--text-title-h3); font-size: 1.5em; }
+
+  strong {
+    background-image: linear-gradient(62deg, #87c2fd 0%, #dcb9fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  em {
+    color: #bb9af7;
+    font-style: italic;
+  }
+
+  mark {
+    background-color: var(--text-highlight-bg);
+    color: #fff;
+  }
+
+  /* --- Links --- */
+  a {
+    color: var(--text-a);
+    text-decoration: none;
+    background-image: linear-gradient(to bottom, var(--interactive-accent), var(--interactive-accent));
+    background-size: 3px 3px;
+    background-repeat: repeat-x;
+  }
+  a:hover {
+    color: var(--text-a-hover);
+    background-size: 4px 50px;
+  }
+
+  /* --- Blockquotes --- */
+  blockquote {
+    color: #bdbdbd;
+    border-left: 3px solid var(--blockquote-border);
+    background: linear-gradient(135deg, rgba(32, 28, 41, 0.45), #100e17);
+    padding: 1rem 2rem;
+    margin: 1.5rem 0;
+    border-radius: 5px;
+  }
+
+  /* --- Code & Preformatted Blocks --- */
+  code, pre {
+    background-color: var(--code-background);
+    color: var(--code-color);
+    border-radius: var(--code-border-radius);
+    padding: 0.2em 0.4em;
+    font-family: 'OperatorMonoSSmLig-Book', monospace;
+  }
+
+  pre {
+    padding: 1em;
+    overflow-x: auto;
+  }
+
+  /* --- Tables --- */
+  table {
+    border-collapse: collapse;
+    border: 1px solid var(--table-border-color);
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid var(--table-border-color);
+    padding: 0.5em 1em;
+  }
+  th {
+    color: var(--text-accent);
+    background-color: var(--background-secondary);
+  }
+
+  /* --- Tags --- */
+  a.tag {
+    background-color: var(--tag-background);
+    color: var(--text-accent);
+    font-style: italic;
+    border-radius: 0.25em;
+    padding: 0.2em 0.4em;
+  }
+
+  /* --- Horizontal Rules --- */
+  hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--text-accent), transparent);
+    margin: 2em 0;
+  }
+
+  /* --- Page Fill Shadow Fix (bottom page bleed) --- */
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: #100e17;
+    z-index: -1;
+  }
+}
+
+.print .markdown-preview-view {
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+}
