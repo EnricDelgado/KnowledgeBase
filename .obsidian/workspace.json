@@ -8,48 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b02c9965deb62ba2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Unity/Coding/CodingImprovements.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "CodingImprovements"
-            }
-          },
-          {
-            "id": "09f470483a1d3e4e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Unity/Effects/VisualEffects.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "VisualEffects"
-            }
-          },
-          {
-            "id": "87cbf5258a9dd8e4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Unity/Effects/PostProcessing.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "PostProcessing"
-            }
-          },
-          {
             "id": "4a7ba54b3ac23cb6",
             "type": "leaf",
             "state": {
@@ -62,9 +20,23 @@
               "icon": "lucide-file",
               "title": "ShaderLearningRoadmap"
             }
+          },
+          {
+            "id": "898e61c9abcc4aab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "tipsANDtricks.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "tipsANDtricks"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -227,17 +199,19 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "4a7ba54b3ac23cb6",
+  "active": "898e61c9abcc4aab",
   "lastOpenFiles": [
+    "Unity/ShaderLearningRoadmap.md",
+    "tipsANDtricks.md",
+    "Unity/_TIPS&TRICKS",
+    "Unity/Coding/CodingImprovements.md",
+    "Unity/Effects/VisualEffects.md",
+    "Unity/Effects/PostProcessing.md",
     "Unity/BestPracticeGuides.md",
     "_SORT_THIS.md",
-    "Unity/ShaderLearningRoadmap.md",
-    "Unity/Effects/PostProcessing.md",
     "lfs",
     "Unity/Rendering/Rendering.md",
-    "Unity/Effects/VisualEffects.md",
     "Unity/Rendering",
-    "Unity/Coding/CodingImprovements.md",
     "Unity/Effects",
     "Unity/Optimisation/UnityGuides.md",
     "Unity/Optimisation/TextureCompression.md",
